@@ -4,6 +4,8 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
+import '../Screen otp/screen_otp.dart';
+
 class ScreenLogin extends StatelessWidget {
   ScreenLogin({
     super.key,
@@ -31,7 +33,7 @@ class ScreenLogin extends StatelessWidget {
                     fontWeight: FontWeight.w900),
               ),
               const SizedBox(
-                height: 10,
+                height: 12,
               ),
               const Text(
                 'We will send  you a one time password to\nyour registered mobile number',
@@ -41,7 +43,7 @@ class ScreenLogin extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20),
+                padding: const EdgeInsets.symmetric(vertical: 40),
                 child: IntlPhoneField(
                   decoration: InputDecoration(
                     hintText: 'Phone Number',
@@ -58,11 +60,15 @@ class ScreenLogin extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  log(numm.toString());
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return ScreenOtp();
+                    },
+                  ));
                 },
                 child: Container(
                   width: double.infinity,
-                  height: 40,
+                  height: 47,
                   decoration: BoxDecoration(
                       color: const Color(0xffD1CB3D),
                       borderRadius: BorderRadius.circular(10)),
