@@ -34,7 +34,6 @@ class ScreenSplash extends StatelessWidget {
   gotonext({required BuildContext context}) async {
     await Future.delayed(const Duration(seconds: 5));
 
-    gonextpage() {}
     Navigator.push(context, MaterialPageRoute(
       builder: (context) {
         return ScreenLogin();
