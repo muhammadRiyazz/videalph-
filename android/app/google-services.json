@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "843607946052",
+    "project_id": "videalpha-task",
+    "storage_bucket": "videalpha-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843607946052:android:d026eaf6f44808bb389d11",
+        "android_client_info": {
+          "package_name": "com.example.videalpha_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843607946052-2ginohvphvpn2k140uj5ua4kffgu8lm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIh1zzE2r6BiS0PoePMLn68_qOQDlxfSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843607946052-2ginohvphvpn2k140uj5ua4kffgu8lm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
