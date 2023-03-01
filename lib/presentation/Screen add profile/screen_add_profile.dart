@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../screen user profile/screen_user_profile.dart';
+
 class ScreenAddProfile extends StatelessWidget {
   ScreenAddProfile({super.key});
   List gender = ["Male", "Female", "Other"];
@@ -125,11 +127,11 @@ class ScreenAddProfile extends StatelessWidget {
                           ),
                           InkWell(
                             onTap: () {
-                              //   Navigator.push(context, MaterialPageRoute(
-                              //     builder: (context) {
-                              //       return ScreenAddProfile();
-                              //     },
-                              //   ));
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return ScreenUserProfile();
+                                },
+                              ));
                             },
                             child: Container(
                               width: double.infinity,
