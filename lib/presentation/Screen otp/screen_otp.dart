@@ -6,6 +6,8 @@ import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 
+import '../Screen add profile/screen_add_profile.dart';
+
 class ScreenOtp extends StatelessWidget {
   ScreenOtp({
     super.key,
@@ -73,7 +75,11 @@ class ScreenOtp extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  log(otp.toString());
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return ScreenAddProfile();
+                    },
+                  ));
                 },
                 child: Container(
                   width: double.infinity,
@@ -87,7 +93,22 @@ class ScreenOtp extends StatelessWidget {
                     style: TextStyle(color: Colors.white, fontSize: 17),
                   )),
                 ),
-              )
+              ),
+              const Padding(
+                padding: EdgeInsets.only(top: 15, bottom: 5),
+                child: Text(
+                  "Don't receive any code",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              const InkWell(
+                  child: Text(
+                "Resend new code",
+                style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 16,
+                    color: Color.fromARGB(255, 74, 122, 206)),
+              ))
             ],
           ),
         ),
